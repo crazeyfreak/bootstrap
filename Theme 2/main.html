@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bootstrap Theme 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        .jumbotron {
+           background-color: #f4511e; 
+           color: #ffffff;
+           padding: 100px 25px;
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+        }
+
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+
+        .logo{
+            font-size:200px;
+            color: #f4511e;
+        }
+        .logo-small {
+            font-size: 50px;
+            color: #f4511e;
+        }
+
+        @media screen and (max-width : 768px) {
+            .col-sm-4{
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="jumbotron text-center">
+    <h1>Company</h1>    
+    <p>We are specialized in Programming</p>
+    <form class="form-inline">
+        <div class="input-group">
+            <input type="email" class="form-control" size=50 placeholder="Email Address" required>
+            <div class="input-group-btn">
+                <button class="btn btn-danger" type="button">Subscribe</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>About Company Page</h2>
+            <h4>Lorem ipsum..</h4>
+            <p>Lorem ipsum..</p>
+            <button class="btn btn-default btn-lg">Get in Touch</button>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal logo"></span>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-grey">
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-globe logo"></span>
+        </div>
+        <div class="col-sm-8">
+            <h2>Our Values</h2>
+            <h4><strong>MISSION : </strong>Our mission lorem ipsum..</h4>
+            <p><strong>VALUES : </strong>Our mission lorem ipsum..</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid text-center">
+    <h2>Services</h2>
+    <h4>What We Offer</h4>
+    <br >
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-off logo-small"></span>
+            <h4>POWER</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-heart logo-small"></span>
+                <h4>LOVE</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </span>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-lock logo-small"></span>
+            <h4>JOB DONE</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-leaf logo-small"></span>
+            <h4>GREEN</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-certificate logo-small"></span>
+            <h4>CERTEFIED</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-wrench logo-small"></span>
+            <h4>HARD WORK</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-center bg-grey">
+    <h2>Portfolio</h2>
+    <h4>What we have created</h4>
+    <div class="row text-center">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="paris.jpg" alt="paris">
+                <p><strong>Paris</strong></p>
+                <p>Yes, we built Paris</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="newyork.jpg" alt="New York">
+                <p><strong>New York</strong></p>
+                <p>Yes, we built New York</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="sanfran.jpg" alt="Sna Francisco">
+                <p><strong>San Francisco</strong></p>
+                <p>Yes, we built San Francisco</p>
+            </div>
+        </div>
+    </div>
+    <h2>What our customer says</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+                <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+        </div>
+        <div class="item">
+                <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+        </div>
+        <div class="item">
+            <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">   
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previour</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+
+
+
+</body>
+</html>
